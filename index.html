@@ -6,10 +6,10 @@
   <title>Fractal Differential Geometry (FDG)</title>
   <style>
     body {
-      margin: 0;
+      margin: 0px;
       font-family: Arial, sans-serif;
-      background-color: #0d1117;
-      color: #e6edf3;
+      background-color: rgb(13, 17, 23);
+      color: rgb(230, 237, 243);
     }
     header {
       background: url("https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Black_hole_-_Messier_87_crop_max_res.jpg/1920px-Black_hole_-_Messier_87_crop_max_res.jpg") center center / cover no-repeat;
@@ -18,14 +18,14 @@
     }
     header h1 {
       font-size: 2.8rem;
-      margin: 0;
-      color: white;
-      text-shadow: 0 0 10px black;
+      margin: 0px;
+      color: rgb(255, 255, 255);
+      text-shadow: rgb(0, 0, 0) 0px 0px 10px;
     }
     header p {
       font-size: 1.4rem;
       margin-top: 1rem;
-      color: #ccc;
+      color: rgb(204, 204, 204);
     }
     section {
       padding: 2rem;
@@ -35,11 +35,11 @@
       flex-wrap: wrap;
       justify-content: center;
       gap: 1rem;
-      margin: 2rem 0;
+      margin: 2rem 0px;
     }
     .buttons a {
       padding: 1rem 2rem;
-      background-color: #238636;
+      background-color: rgb(35, 134, 54);
       color: white;
       text-decoration: none;
       border-radius: 8px;
@@ -47,14 +47,24 @@
       transition: background-color 0.3s;
     }
     .buttons a:hover {
-      background-color: #2ea043;
+      background-color: rgb(46, 160, 67);
+    }
+    img {
+      max-width: 90%;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 0 10px black;
     }
     footer {
       text-align: center;
       font-style: italic;
       font-size: 0.9rem;
       padding: 2rem;
-      color: #999;
+      color: rgb(153, 153, 153);
+    }
+    hr {
+      border: 1px solid #333;
+      margin: 3rem 0;
     }
   </style>
 </head>
@@ -63,36 +73,35 @@
     <h1>What if spacetime isn’t smooth... but fractal?</h1>
     <p>Explore Fractal Differential Geometry — a new path into the heart of black holes.</p>
   </header>
+
   <section>
     <h2>Choose Your Path</h2>
     <div class="buttons">
-      <a href="#">🌌 Curious Explorer</a>
-      <a href="#">📘 Theoretical Researcher</a>
-      <a href="#">🔬 Want to Test It</a>
-      <a href="#">❓ Skeptical?</a>
+      <a href="#explorer">🌌 Curious Explorer</a>
+      <a href="#researcher">📘 Theoretical Researcher</a>
+      <a href="#test">🔬 Want to Test It</a>
+      <a href="#skeptical">❓ Skeptical?</a>
     </div>
+  </section>
 
+  <section>
     <h2>What Is FDG?</h2>
-    <div style="text-align: center; margin-top: 2rem;">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/0/02/Black_hole_-_Messier_87_crop_max_res.jpg"
-       alt="Black hole M87*"
-       style="max-width: 90%; height: auto; border-radius: 12px; box-shadow: 0 0 10px black;">
-  <p style="color: #ccc; font-size: 0.9rem;">The supermassive black hole M87*, as imaged by the Event Horizon Telescope (2019).</p>
-    </div>
-    <p>
-      Fractal Differential Geometry (FDG) proposes that the dimensionality of spacetime isn't fixed,
-      but varies — flowing from 4 to ~2.356 near singularities. This predicts measurable effects like
-      echo delays and spectral shifts from black holes.
-    </p>
+    <p>Fractal Differential Geometry (FDG) proposes that the dimensionality of spacetime isn't fixed, but varies — flowing from 4 to ~2.356 near singularities. This predicts measurable effects like echo delays and spectral shifts from black holes.</p>
 
-    <h2>Key Predictions</h2>
+    <div style="text-align: center; margin-top: 2rem;">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/0/02/Black_hole_-_Messier_87_crop_max_res.jpg"
+           alt="Black hole M87*" />
+      <p style="color: #ccc; font-size: 0.9rem;">The supermassive black hole M87*, imaged by the Event Horizon Telescope (2019).</p>
+    </div>
+
+    <h3>Key Predictions</h3>
     <ul>
       <li>⏱ Echo time delay scales as Δt ∝ M</li>
       <li>🌈 Light redshifts from gamma → infrared across Φ(r) flow</li>
       <li>🎯 All predictions are falsifiable with current observatories</li>
     </ul>
 
-    <h2>The Three Papers</h2>
+    <h3>The Three Papers</h3>
     <ol>
       <li>1️⃣ On Dimensional Flow in Gravitational Spacetime</li>
       <li>2️⃣ Gravitational Waves and Dimensional Flow</li>
@@ -100,9 +109,31 @@
     </ol>
   </section>
 
+  <hr />
+
+  <section id="explorer">
+    <h2>🌌 Curious Explorer</h2>
+    <p>Discover the basic ideas of fractal spacetime and why black holes might be more complex than we ever imagined.</p>
+  </section>
+
+  <section id="researcher">
+    <h2>📘 Theoretical Researcher</h2>
+    <p>Review the field equations, variational principles, and connections to existing theories like Brans–Dicke and Asymptotic Safety.</p>
+  </section>
+
+  <section id="test">
+    <h2>🔬 Want to Test It</h2>
+    <p>Explore how FDG predictions can be tested via gravitational wave echoes, black hole shadows, and redshift anomalies.</p>
+  </section>
+
+  <section id="skeptical">
+    <h2>❓ Skeptical?</h2>
+    <p>Good. Every real scientist should be. Read the falsifiability criteria, observational data comparisons, and where FDG could fail.</p>
+  </section>
+
   <footer>
     “All truths are easy to understand once they are discovered; the point is to discover them.” – Galileo<br />
-    Robert William Somazze, 2025
+    <strong>Robert William Somazze, 2025</strong>
   </footer>
 </body>
 </html>
