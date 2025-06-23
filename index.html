@@ -1,139 +1,45 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Fractal Differential Geometry (FDG)</title>
-  <style>
-    body {
-      margin: 0px;
-      font-family: Arial, sans-serif;
-      background-color: rgb(13, 17, 23);
-      color: rgb(230, 237, 243);
-    }
-    header {
-      background: url("https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Black_hole_-_Messier_87_crop_max_res.jpg/1920px-Black_hole_-_Messier_87_crop_max_res.jpg") center center / cover no-repeat;
-      padding: 6rem 2rem;
-      text-align: center;
-    }
-    header h1 {
-      font-size: 2.8rem;
-      margin: 0px;
-      color: rgb(255, 255, 255);
-      text-shadow: rgb(0, 0, 0) 0px 0px 10px;
-    }
-    header p {
-      font-size: 1.4rem;
-      margin-top: 1rem;
-      color: rgb(204, 204, 204);
-    }
-    section {
-      padding: 2rem;
-    }
-    .buttons {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 1rem;
-      margin: 2rem 0px;
-    }
-    .buttons a {
-      padding: 1rem 2rem;
-      background-color: rgb(35, 134, 54);
-      color: white;
-      text-decoration: none;
-      border-radius: 8px;
-      font-size: 1rem;
-      transition: background-color 0.3s;
-    }
-    .buttons a:hover {
-      background-color: rgb(46, 160, 67);
-    }
-    img {
-      max-width: 90%;
-      height: auto;
-      border-radius: 12px;
-      box-shadow: 0 0 10px black;
-    }
-    footer {
-      text-align: center;
-      font-style: italic;
-      font-size: 0.9rem;
-      padding: 2rem;
-      color: rgb(153, 153, 153);
-    }
-    hr {
-      border: 1px solid #333;
-      margin: 3rem 0;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <title>Fractal Differential Geometry (FDG)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body { margin: 0; font-family: Arial, sans-serif; background: #0d1117; color: #e6edf3; }
+        header { background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Black_hole_-_Messier_87_crop_max_res.jpg/1920px-Black_hole_-_Messier_87_crop_max_res.jpg') center/cover no-repeat; padding: 6rem 2rem; text-align: center; }
+        header h1 { font-size: 2.8rem; margin: 0; color: #fff; text-shadow: 0 0 10px #000; }
+        section { padding: 2rem; max-width: 800px; margin: auto; }
+        .quote { font-style: italic; margin-top: 2rem; color: #ccc; }
+        footer { text-align: center; padding: 2rem; font-size: 0.8rem; color: #999; }
+    </style>
 </head>
 <body>
-  <header>
-    <h1>What if spacetime isn’t smooth... but fractal?</h1>
-    <p>Explore Fractal Differential Geometry — a new path into the heart of black holes.</p>
-  </header>
-
-  <section>
-    <h2>Choose Your Path</h2>
-    <div class="buttons">
-      <a href="#explorer">🌌 Curious Explorer</a>
-      <a href="#researcher">📘 Theoretical Researcher</a>
-      <a href="#test">🔬 Want to Test It</a>
-      <a href="#skeptical">❓ Skeptical?</a>
-    </div>
-  </section>
-
-  <section>
-    <h2>What Is FDG?</h2>
-    <p>Fractal Differential Geometry (FDG) proposes that the dimensionality of spacetime isn't fixed, but varies — flowing from 4 to ~2.356 near singularities. This predicts measurable effects like echo delays and spectral shifts from black holes.</p>
-
-    <div style="text-align: center; margin-top: 2rem;">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/0/02/Black_hole_-_Messier_87_crop_max_res.jpg"
-           alt="Black hole M87*" />
-      <p style="color: #ccc; font-size: 0.9rem;">The supermassive black hole M87*, imaged by the Event Horizon Telescope (2019).</p>
-    </div>
-
-    <h3>Key Predictions</h3>
-    <ul>
-      <li>⏱ Echo time delay scales as Δt ∝ M</li>
-      <li>🌈 Light redshifts from gamma → infrared across Φ(r) flow</li>
-      <li>🎯 All predictions are falsifiable with current observatories</li>
-    </ul>
-
-    <h3>The Three Papers</h3>
-    <ol>
-      <li>1️⃣ On Dimensional Flow in Gravitational Spacetime</li>
-      <li>2️⃣ Gravitational Waves and Dimensional Flow</li>
-      <li>3️⃣ Electromagnetic Signatures of Dimensional Flow</li>
-    </ol>
-  </section>
-
-  <hr />
-
-  <section id="explorer">
-    <h2>🌌 Curious Explorer</h2>
-    <p>Discover the basic ideas of fractal spacetime and why black holes might be more complex than we ever imagined.</p>
-  </section>
-
-  <section id="researcher">
-    <h2>📘 Theoretical Researcher</h2>
-    <p>Review the field equations, variational principles, and connections to existing theories like Brans–Dicke and Asymptotic Safety.</p>
-  </section>
-
-  <section id="test">
-    <h2>🔬 Want to Test It</h2>
-    <p>Explore how FDG predictions can be tested via gravitational wave echoes, black hole shadows, and redshift anomalies.</p>
-  </section>
-
-  <section id="skeptical">
-    <h2>❓ Skeptical?</h2>
-    <p>Good. Every real scientist should be. Read the falsifiability criteria, observational data comparisons, and where FDG could fail.</p>
-  </section>
-
-  <footer>
-    “All truths are easy to understand once they are discovered; the point is to discover them.” – Galileo<br />
-    <strong>Robert William Somazze, 2025</strong>
-  </footer>
+    <header>
+        <h1>What if spacetime isn’t smooth... but fractal?</h1>
+        <p>Explore Fractal Differential Geometry — a new path into the heart of black holes.</p>
+    </header>
+    <section>
+        <h2>Overview</h2>
+        <p>FDG proposes that the dimensionality of spacetime isn't fixed, but varies — flowing from 4 to ~2.356 near singularities. This predicts measurable effects like echo delays and spectral shifts from black holes.</p>
+        <h2>Key Predictions</h2>
+        <ul>
+            <li>⏱ Echo time delay scales as Δt ∝ M</li>
+            <li>🌈 Light redshifts from gamma → infrared across Φ(r) flow</li>
+            <li>🎯 All predictions are falsifiable with current observatories</li>
+        </ul>
+        <h2>The Three Papers</h2>
+        <ol>
+            <li><a href="#">On Dimensional Flow in Gravitational Spacetime</a></li>
+            <li><a href="#">Gravitational Waves and Dimensional Flow</a></li>
+            <li><a href="#">Electromagnetic Signatures of Dimensional Flow</a></li>
+        </ol>
+        <h2>Thought Experiment 1</h2>
+        <p>Imagine riding a gamma ray through the galaxy. Of course you can't do this in real life because we are all made of matter and as we know matter cannot be accelerated to the speed of light. However, for this thought experiment we will suspend this notion and continue. Our gamma ray speeds toward its destination; a black hole. As we cross the threshold of the event horizon we ponder the nature of what exactly is a singularity. How can something birthed in the universe, lived out its life within the universe and now in death is somehow disconnected from the universe? Does that make a singularity nothing? But how can a point or ring be nothing? Furthermore, does superposition negate quantum mechanics from handling the singularity? And just as I ruminate over these queries my ride on the gamma ray began to get bumpy as the geodesic began fractalating. The deeper into the black hole I went the more fractalated the path became, lighting the interior with redshifted rays which spread out like lightning bolts all around me. After millions of years have passed my gamma ray has redshifted to an Infrared ray, barely a whisper of what it once was going in. I don't believe in the description of a singularity. I think it's time to call it what it is; the fractal core of a black hole.</p>
+        <p class="quote">“All truths are easy to understand once they are discovered; the point is to discover them.” – Galileo</p>
+    </section>
+    <footer>
+        © 2025 Robert William Somazze | FDG Project | Open Science Initiative
+    </footer>
 </body>
 </html>
