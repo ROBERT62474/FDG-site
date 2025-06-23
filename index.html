@@ -4,14 +4,60 @@
 <head>
     <meta charset="UTF-8">
     <title>Fractal Differential Geometry (FDG)</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
-        body { margin: 0; font-family: Arial, sans-serif; background: #0d1117; color: #e6edf3; }
-        header { background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Black_hole_-_Messier_87_crop_max_res.jpg/1920px-Black_hole_-_Messier_87_crop_max_res.jpg') center/cover no-repeat; padding: 6rem 2rem; text-align: center; }
-        header h1 { font-size: 2.8rem; margin: 0; color: #fff; text-shadow: 0 0 10px #000; }
-        section { padding: 2rem; max-width: 800px; margin: auto; }
-        .quote { font-style: italic; margin-top: 2rem; color: #ccc; }
-        footer { text-align: center; padding: 2rem; font-size: 0.8rem; color: #999; }
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #0d1117;
+            color: #e6edf3;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            text-align: center;
+            padding: 4rem 2rem;
+        }
+        h1 {
+            font-size: 2.5rem;
+        }
+        section {
+            padding: 2rem;
+        }
+        .buttons {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+        .buttons a {
+            padding: 1rem 2rem;
+            background-color: #238636;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 1rem;
+        }
+        .buttons a:hover {
+            background-color: #2ea043;
+        }
+        footer {
+            text-align: center;
+            font-style: italic;
+            font-size: 0.9rem;
+            padding: 2rem;
+            color: #999;
+        }
+        .anchor-highlight {
+            animation: glow 2s ease-out;
+        }
+        @keyframes glow {
+            0% { background-color: #264d3c; }
+            100% { background-color: transparent; }
+        }
     </style>
 </head>
 <body>
@@ -19,27 +65,65 @@
         <h1>What if spacetime isn’t smooth... but fractal?</h1>
         <p>Explore Fractal Differential Geometry — a new path into the heart of black holes.</p>
     </header>
+
+    <div class="buttons">
+        <a href="#explorer">🌌 Curious Explorer</a>
+        <a href="#researcher">📘 Theoretical Researcher</a>
+        <a href="#tester">🔬 Want to Test It</a>
+        <a href="#skeptic">❓ Skeptical?</a>
+    </div>
+
     <section>
         <h2>Overview</h2>
         <p>FDG proposes that the dimensionality of spacetime isn't fixed, but varies — flowing from 4 to ~2.356 near singularities. This predicts measurable effects like echo delays and spectral shifts from black holes.</p>
+    </section>
+
+    <section>
         <h2>Key Predictions</h2>
         <ul>
             <li>⏱ Echo time delay scales as Δt ∝ M</li>
             <li>🌈 Light redshifts from gamma → infrared across Φ(r) flow</li>
             <li>🎯 All predictions are falsifiable with current observatories</li>
         </ul>
+    </section>
+
+    <section>
         <h2>The Three Papers</h2>
-        <ol>
-            <li><a href="#">On Dimensional Flow in Gravitational Spacetime</a></li>
-            <li><a href="#">Gravitational Waves and Dimensional Flow</a></li>
-            <li><a href="#">Electromagnetic Signatures of Dimensional Flow</a></li>
-        </ol>
+        <ul>
+            <li><a href="https://doi.org/10.5281/zenodo.15669628" target="_blank">On Dimensional Flow in Gravitational Spacetime</a></li>
+            <li><a href="https://doi.org/10.5281/zenodo.15539857" target="_blank">Gravitational Waves and Dimensional Flow</a></li>
+            <li><a href="https://doi.org/10.5281/zenodo.15571161" target="_blank">Electromagnetic Signatures of Dimensional Flow</a></li>
+        </ul>
+    </section>
+
+    <section id="explorer" class="anchor-highlight">
+        <h2>🌌 Curious Explorer</h2>
+        <p>Discover the basic ideas of fractal spacetime and why black holes might be more complex than we ever imagined.</p>
+    </section>
+
+    <section id="researcher" class="anchor-highlight">
+        <h2>📘 Theoretical Researcher</h2>
+        <p>Review the field equations, variational principles, and connections to existing theories like Brans–Dicke and Asymptotic Safety.</p>
+    </section>
+
+    <section id="tester" class="anchor-highlight">
+        <h2>🔬 Want to Test It</h2>
+        <p>Explore how FDG predictions can be tested via gravitational wave echoes, black hole shadows, and redshift anomalies.</p>
+    </section>
+
+    <section id="skeptic" class="anchor-highlight">
+        <h2>❓ Skeptical?</h2>
+        <p>Good. Every real scientist should be. Read the falsifiability criteria, observational data comparisons, and where FDG could fail.</p>
+    </section>
+
+    <section>
         <h2>Thought Experiment 1</h2>
         <p>Imagine riding a gamma ray through the galaxy. Of course you can't do this in real life because we are all made of matter and as we know matter cannot be accelerated to the speed of light. However, for this thought experiment we will suspend this notion and continue. Our gamma ray speeds toward its destination; a black hole. As we cross the threshold of the event horizon we ponder the nature of what exactly is a singularity. How can something birthed in the universe, lived out its life within the universe and now in death is somehow disconnected from the universe? Does that make a singularity nothing? But how can a point or ring be nothing? Furthermore, does superposition negate quantum mechanics from handling the singularity? And just as I ruminate over these queries my ride on the gamma ray began to get bumpy as the geodesic began fractalating. The deeper into the black hole I went the more fractalated the path became, lighting the interior with redshifted rays which spread out like lightning bolts all around me. After millions of years have passed my gamma ray has redshifted to an Infrared ray, barely a whisper of what it once was going in. I don't believe in the description of a singularity. I think it's time to call it what it is; the fractal core of a black hole.</p>
-        <p class="quote">“All truths are easy to understand once they are discovered; the point is to discover them.” – Galileo</p>
     </section>
+
     <footer>
-        © 2025 Robert William Somazze | FDG Project | Open Science Initiative
+        <p>“All truths are easy to understand once they are discovered; the point is to discover them.” – Galileo</p>
+        <p>© 2025 Robert William Somazze | FDG Project | Open Science Initiative</p>
     </footer>
 </body>
 </html>
