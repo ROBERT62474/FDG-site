@@ -1,21 +1,16 @@
-<div style="text-align:center; margin-top: 20px;">
-  <img src="fdg_logo.png" alt="FDG Logo" style="max-width: 200px;">
-</div>
 <!DOCTYPE html>
 <html lang="en">
-<link rel="icon" type="image/x-icon" href="favicon.ico">
 <head>
-<!-- FDG Favicon -->
-<link rel="icon" type="image/png"
-href="favicon.png">
-
-<!-- Page Title -->
-<title>Fractal Differential Geometry
-(FDG)</title>  
-    </title>  
     <meta charset="UTF-8">
-    <title>Fractal Differential Geometry (FDG)</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- FDG Favicon -->
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    
+    <!-- Page Title -->
+    <title>Fractal Differential Geometry (FDG)</title>
+    
     <style>
         html {
             scroll-behavior: smooth;
@@ -26,16 +21,33 @@ href="favicon.png">
             color: #e6edf3;
             margin: 0;
             padding: 0;
+            line-height: 1.6;
         }
         header {
             text-align: center;
             padding: 4rem 2rem;
         }
+        .logo-container {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        .logo-container img {
+            max-width: 200px;
+            height: auto;
+        }
         h1 {
             font-size: 2.5rem;
+            margin: 1rem 0;
+        }
+        h2 {
+            color: #58a6ff;
+            border-bottom: 2px solid #21262d;
+            padding-bottom: 0.5rem;
         }
         section {
             padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
         }
         .buttons {
             display: flex;
@@ -51,9 +63,52 @@ href="favicon.png">
             text-decoration: none;
             border-radius: 8px;
             font-size: 1rem;
+            transition: background-color 0.3s ease;
         }
         .buttons a:hover {
             background-color: #2ea043;
+        }
+        .papers-list {
+            list-style: none;
+            padding: 0;
+        }
+        .papers-list li {
+            margin: 1rem 0;
+            padding: 1rem;
+            background-color: #161b22;
+            border-radius: 8px;
+            border-left: 4px solid #238636;
+        }
+        .papers-list a {
+            color: #58a6ff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .papers-list a:hover {
+            text-decoration: underline;
+        }
+        .key-predictions {
+            background-color: #161b22;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 1rem 0;
+        }
+        .key-predictions ul {
+            list-style: none;
+            padding: 0;
+        }
+        .key-predictions li {
+            margin: 0.8rem 0;
+            padding: 0.5rem 0;
+            font-size: 1.1rem;
+        }
+        .thought-experiment {
+            background-color: #0d1421;
+            border: 1px solid #30363d;
+            border-radius: 8px;
+            padding: 2rem;
+            margin: 2rem 0;
+            font-style: italic;
         }
         footer {
             text-align: center;
@@ -61,19 +116,45 @@ href="favicon.png">
             font-size: 0.9rem;
             padding: 2rem;
             color: #999;
+            border-top: 1px solid #21262d;
+            margin-top: 3rem;
         }
         .anchor-highlight {
+            scroll-margin-top: 2rem;
+        }
+        .anchor-highlight:target {
             animation: glow 2s ease-out;
         }
         @keyframes glow {
             0% { background-color: #264d3c; }
             100% { background-color: transparent; }
         }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            .buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            .buttons a {
+                width: 80%;
+                text-align: center;
+            }
+            section {
+                padding: 1rem;
+            }
+        }
     </style>
 </head>
 <body>
     <header>
-        <h1>What if spacetime isn’t smooth... but fractal?</h1>
+        <div class="logo-container">
+            <img src="fdg_logo.png" alt="FDG Logo">
+        </div>
+        <h1>What if spacetime isn't smooth... but fractal?</h1>
         <p>Explore Fractal Differential Geometry — a new path into the heart of black holes.</p>
     </header>
 
@@ -91,16 +172,18 @@ href="favicon.png">
 
     <section>
         <h2>Key Predictions</h2>
-        <ul>
-            <li>⏱ Echo time delay scales as Δt ∝ M</li>
-            <li>🌈 Light redshifts from gamma → infrared across Φ(r) flow</li>
-            <li>🎯 All predictions are falsifiable with current observatories</li>
-        </ul>
+        <div class="key-predictions">
+            <ul>
+                <li>⏱ Echo time delay scales as Δt ∝ M</li>
+                <li>🌈 Light redshifts from gamma → infrared across Φ(r) flow</li>
+                <li>🎯 All predictions are falsifiable with current observatories</li>
+            </ul>
+        </div>
     </section>
 
     <section>
         <h2>The Three Papers</h2>
-        <ul>
+        <ul class="papers-list">
             <li><a href="https://doi.org/10.5281/zenodo.15669628" target="_blank">On Dimensional Flow in Gravitational Spacetime</a></li>
             <li><a href="https://doi.org/10.5281/zenodo.15539857" target="_blank">Gravitational Waves and Dimensional Flow</a></li>
             <li><a href="https://doi.org/10.5281/zenodo.15571161" target="_blank">Electromagnetic Signatures of Dimensional Flow</a></li>
@@ -129,12 +212,14 @@ href="favicon.png">
 
     <section>
         <h2>Thought Experiment 1</h2>
-        <p>Imagine riding a gamma ray through the galaxy. Of course you can't do this in real life because we are all made of matter and as we know matter cannot be accelerated to the speed of light. However, for this thought experiment we will suspend this notion and continue. Our gamma ray speeds toward its destination; a black hole. As we cross the threshold of the event horizon we ponder the nature of what exactly is a singularity. How can something birthed in the universe, lived out its life within the universe and now in death is somehow disconnected from the universe? Does that make a singularity nothing? But how can a point or ring be nothing? Furthermore, does superposition negate quantum mechanics from handling the singularity? And just as I ruminate over these queries my ride on the gamma ray began to get bumpy as the geodesic began fractalating. The deeper into the black hole I went the more fractalated the path became, lighting the interior with redshifted rays which spread out like lightning bolts all around me. After millions of years have passed my gamma ray has redshifted to an Infrared ray, barely a whisper of what it once was going in. I don't believe in the description of a singularity. I think it's time to call it what it is; the fractal core of a black hole.</p>
+        <div class="thought-experiment">
+            <p>Imagine riding a gamma ray through the galaxy. Of course you can't do this in real life because we are all made of matter and as we know matter cannot be accelerated to the speed of light. However, for this thought experiment we will suspend this notion and continue. Our gamma ray speeds toward its destination; a black hole. As we cross the threshold of the event horizon we ponder the nature of what exactly is a singularity. How can something birthed in the universe, lived out its life within the universe and now in death is somehow disconnected from the universe? Does that make a singularity nothing? But how can a point or ring be nothing? Furthermore, does superposition negate quantum mechanics from handling the singularity? And just as I ruminate over these queries my ride on the gamma ray began to get bumpy as the geodesic began fractalating. The deeper into the black hole I went the more fractalated the path became, lighting the interior with redshifted rays which spread out like lightning bolts all around me. After millions of years have passed my gamma ray has redshifted to an Infrared ray, barely a whisper of what it once was going in. I don't believe in the description of a singularity. I think it's time to call it what it is; the fractal core of a black hole.</p>
+        </div>
     </section>
 
     <footer>
-        <p>“All truths are easy to understand once they are discovered; the point is to discover them.” – Galileo</p>
+        <p>"All truths are easy to understand once they are discovered; the point is to discover them." – Galileo</p>
         <p>© 2025 Robert William Somazze | FDG Project | Open Science Initiative</p>
     </footer>
 </body>
-</html>
+          </html>
